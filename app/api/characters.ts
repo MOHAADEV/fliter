@@ -33,8 +33,7 @@ export default async function handler(
     }
 
     const data: ApiResponse = await response.json();
-    console.log("Query Params:", req.query); // log query parameters
-    console.log("Response from API:", data);
+
 
     res.status(200).json(data);
   } catch (error) {
